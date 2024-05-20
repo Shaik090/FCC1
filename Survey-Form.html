@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="styles1.css"/>
+  </head>
+  <body>
+    <h1 id="title">Build a Survey Form</h1>
+    <p id="description"> Please Fill the form </p>
+    <form id="survey-form">
+    <fieldset>
+    <label for="name" id="name-label">Name
+      <input type="text" name="name" id="name" placeholder="Enter your name" required /></label>
+    <label for="email" id="email-label">Email
+      <input type="email" name="eid" id="email" placeholder="Enter your email" required /> </label>
+    <label for="number" id="number-label">Age
+      <input type="number" id="number" name="age" min="10" max="70" placeholder="Enter your age" ></label>
+    <label for="dropdown">Occupation
+      <select id="dropdown" name="dropdown">
+        <option value=""> Select your current role</option>
+        <option value="">Student</option>
+        <option value="">Part Time Job</option>
+        <option value="">Full Time Job</option>
+        <option value="">Prefer not say</option>
+      </select>
+    </label>
+    <label>Your Gender</label>
+      <label>
+      <input type="radio" name="gender" id="male" value="male" checked>
+       Male</label>
+    <label>
+    <input type="radio" name="gender" id="female" value="female">
+    Female</label>
+    <label>Which language do you know
+    <label for="op1">
+      <input type="checkbox" name="python" id="op1" value="a" checked />Python</label>
+    <label for="op2">
+      <input type="checkbox" name="java" id="op2" value="b">Java</label>
+    <label for="op3">
+      <input type="checkbox" name="c++" id="op3" value="c" />C++
+    </label>
+    <label for="op4">
+      <input type="checkbox" name="c#" id="op4" value="d" />C#
+    </label>
+    </label>
+    <label for="addrs">Enter your address
+    <textarea id="addrs" name="Address" rows="7" cols="50" required></textarea></label>
+    <input type="submit" name="Submit" id="submit" value="Submit" />
+    </fieldset>
+</html>
