@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url('n_img.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+nav{
+    width: 100%;
+    height: 100px;                
+    color: antiquewhite;
+    position: relative;
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;            
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+.menu a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: indianred;
+    padding: 10px ;
+    position: relative;    
+}
+.menu a:before{
+    content: '';
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid indianred;
+    position: absolute;
+    transition: 0.4s linear;
+}
+.menu a:hover:before{
+    width: 90%;
+}
+.Website {
+    width: 250px;
+    height: auto;   
+    display: flex;
+    position: absolute;
+    max-width: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    letter-spacing: 3px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 30px;
+} 
+
+.Website a{
+    text-decoration: none;
+    color: black;
+    background: aquamarine;
+    border-radius: 12px;
+    width: 250px;
+    height: auto;
+    box-shadow: 0 4px 9px 0 rgba(0,0,0,1px), 0 6px 20px 0 rgba(0,0,0,2px);
+    padding: 20px 30px;
+    transition: 0.4s;
+}
+.Website a:hover{
+    background: transparent;
+    border: 1px solid aquamarine;
+}
+.Footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: aliceblue;
+
+}
+.Footer a{
+    text-decoration: none;
+    color: black;
+}
